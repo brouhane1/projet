@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            font-family: poppins, sans-serif;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
+        h1 {
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: default;
+        }
+        .col ul {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 8px 0;
+        }
+        p{
+            font-size: 20px;
+            color: white;
+            cursor: default;
+            
+        }
+        .auto1{
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            color: #f0f0f0;
+            
+        }
+        #brouhane:hover{
+            transform: perspective(500px) rotateX(5deg);
+            transition: 0.2s ease;
+        }
+        .auto2{
+            background-color: #05b3f8ec;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .auto3{
+            background-color: #f8b305ec;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .auto4{
+            background-color: #05f8b3ec;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .auto5{
+            background-color: #f805052a;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+        }
+        .fout{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .col li:hover {
+            color: #07d456ea;
+            cursor: pointer;
+            transition: 0.1s ease;
+        }
+        .pla{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            color: black;
+            padding: 10px 0;
+            height: 600px;
+            width: 160px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transform: translateX(-100%);
+        }
+        h2{
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        input{
+            display: none;
+            visibility: hidden;
+        }
+        .bar{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 20px;
+            left: 8px;
+            box-shadow: 0 0 5px;
+            background: #fff;
+            border-radius: 7px;
+            z-index: 1;
+        }
+        .bar .commun{
+            width: 25px;
+            height: 2px;
+            background-color: blueviolet;
+            position: absolute;
+            top: 5px;
+        }
+        .bar .top_line{
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .bar .middle_line{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .bar .end_line{
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        input:checked ~ .bar .top_line{
+            width: 25px;
+            left: 3px;
+            top: 14px;
+            transform: rotate(45deg);
+        }
+        input:checked ~ .bar .end_line{
+            width: 25px;
+            left: 3px;
+            top: 14px;
+            transform: rotate(-45deg);
+        }
+        input:checked ~ .bar .middle_line{
+           opacity: 0;
+           transition: 0.5s ease;
+           transform: translateX(20px);
+        }
+        input:checked ~ .pla{
+            transform: translateX(0);
+            transition: 0.5s ease;
+        }
+    </style>
+  </head>
+  <body>
+    <label>
+        <input type="checkbox">
+        <div class="bar">
+            <div class="commun top_line"></div>
+            <div class="commun middle_line"></div>
+            <div class="commun end_line"></div>
+        </div>
+    <div class="pla">
+        <h2>Menu</h2>
+        <ul>
+            <li>Accueil</li>
+            <li>À propos</li>
+            <li>Nos Services</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    </label>
+
+    <section class="auto1" id="brouhane">
+        <h1>Services de création et développement web</h1>
+        <p>Brouhane OMOROU</p>
+        <hr>
+        <div class="col">
+            <ul>
+                <li>Accueil</li>
+                <li>À propos</li>
+                <li>Nos Services</li>
+                <li>Contact</li>
+            </ul>
+        
+        </div>
+    </section>
+    <section class="auto2"  id="brouhane">
+        <h1>Bienvenue dans notre monde <br>numérique</h1>
+        <p>
+            Nous offrons une gamme complète de services pour vous aider à établir et à développer votre présence en ligne.
+        </p>
+    </section>
+    <section class="auto3"  id="brouhane">
+        <h1>Nos Services</h1>
+        <p>
+            Nous proposons une variété de services adaptés à vos besoins, y compris la conception de sites web, le développement d'applications et le marketing numérique.
+        </p>
+    </section>
+    <section class="auto4"  id="brouhane">
+        <h1>A Propos</h1>
+        <p>
+            Nous sommes une équipe de professionnels passionnés par la technologie et le design. Notre objectif est de fournir des solutions innovantes et efficaces pour nos clients.
+        </p>
+    </section>
+    <section class="auto5" id="brouhane">   
+        <h1>Contact</h1>
+        <p>
+            Pour toute demande d'information ou de devis, n'hésitez pas à nous contacter.
+        </p>
+        <p>Email: <a href="mailto:brouhaneomar2@gmail.com">Envoyez-nous un email</a></p>
+        <p>contact: <a href="tel:+22890420014">+228 90 42 00 14</a></p>
+    </section>
+    <footer class="fout">
+        <p>&copy; 2025 Brouhane OMOROU. Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>
