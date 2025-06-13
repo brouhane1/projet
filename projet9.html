@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoLiSt</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: antiquewhite;
+      }
+      .meta {
+        position: relative;
+        width: 180px;
+        height: 800px;
+        background: #fff;
+        text-align: center;
+        line-height: 15px;
+        transform: translateX(-180px);
+      }
+      .meta ul li {
+        list-style: none;
+        position: relative;
+        line-height: 35px;
+        top: 45px;
+      }
+      .meta a {
+        text-decoration: none;
+        color: goldenrod;
+        font-size: 20px;
+      }
+      h1 {
+        position: relative;
+        top: 25px;
+        color: bisque;
+      }
+      input {
+        visibility: hidden;
+        display: none;
+      }
+      .bar {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 20px;
+        left: 8px;
+        box-shadow: 0 0 5px;
+        background: #fff;
+        border-radius: 7px;
+        z-index: 1;
+      }
+      .bar .commun {
+        width: 20px;
+        height: 2px;
+        background-color: blueviolet;
+        position: absolute;
+        top: 5px;
+      }
+      .bar .top_line {
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .bar .middle_line {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .bar .end_line {
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      input:checked ~ .bar .top_line {
+        width: 20px;
+        left: 5px;
+        top: 14px;
+        transform: rotate(45deg);
+      }
+      input:checked ~ .bar .end_line {
+        width: 20px;
+        left: 5px;
+        top: 14px;
+        transform: rotate(-45deg);
+      }
+      input:checked ~ .bar .middle_line {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+      input:checked ~ .meta {
+        transform: translateX(0);
+        transition: 0.5s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <label>
+      <input type="checkbox" />
+      <div class="bar">
+        <span class="top_line commun"></span>
+        <span class="middle_line commun"></span>
+        <span class="end_line commun"></span>
+      </div>
+      <div class="meta">
+        <h1>Menu</h1>
+        <ul>
+          <li><a href="#">A propos</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Solution</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Reservation</a></li>
+        </ul>
+      </div>
+    </label>
+  </body>
+</html>
