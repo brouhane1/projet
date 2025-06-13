@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page web wifi Zone</title>
+    <style>
+       .form{
+            width: 700px;
+            border-radius: 150px;
+            background: whitesmoke;
+            text-align: center;
+            margin-left: 250px;
+            padding-inline: 10px;
+            
+        }
+        .form h2{
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(109, 106, 106);
+        }
+        .image1 img{
+            width: 65px;
+            height: 65px;
+            margin-top: 50px;
+        }
+        .membre ul{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 130px;
+            margin-left: -28px;
+            margin-top: 30px;
+           
+        }
+        .membre li{
+            background: brown;
+            color: white;
+            width: 100px;
+            border-radius: 10px;
+            height: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+        .para{
+            color: rgb(109, 106, 106);
+            font-size: 17px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 30px;
+        }
+        .in{
+            display: flex;
+            flex-direction: column;
+            margin-left: 220px;
+            gap: 29px;
+        }
+        .in input{
+            width: 260px;
+            border-radius: 20px;
+            border: 1px solid rgb(177, 174, 174);
+            height: 30px;
+            box-shadow: 0 0 3px;
+        }
+        .in input::placeholder{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .in button{
+            width: 260px;
+            height: 30px;
+            border-radius: 20px;
+            background: brown;
+            color: white;
+           
+        }
+        .tarif table{
+            margin-left: 210px;
+            border-radius: 10px;
+            border: 2px ;
+            width: 300px;
+            background: rgb(107, 111, 114);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-inline: 25px;
+        }    
+        .para1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:  rgb(109, 106, 106);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div class="image1">
+            <img src="wifi.png" alt="Photo du wifizone">
+        </div>
+        <h2>BROUHANE WIFIZONE</h2>
+        <div class="membre">
+            <ul>
+                <li>Ticket</li>
+                <li>Membre</li>
+            </ul>
+        </div>
+        <p class="para">Tapez votre nom d'utilisateur et votre mot de passe</p>
+        <div class="in">
+            
+                <input type="text" name="Nom d'utilisateur" placeholder="Nom d'utilisateur">
+                <input type="password" name="Mot de passe" placeholder="Mot de passe">
+                <button type="submit">Se connecter</button>
+            
+        </div>
+        <p class="para1">Surfez avec du haut débit !</p>
+        <div class="image2">
+            <img src="zone.png" alt="photo de la zone">
+        </div>
+        <p class="para1">Tél: 90/42/00/14</p>
+        <p class="para1">Nos tarifs</p>
+        <div class="tarif">
+            <table>
+                <tr>
+                    <th>Heures</th>
+                    <th>Prix</th>
+                    <th>Validité</th>
+                </tr>
+                <tr>
+                    <td>6H</td>
+                    <td>100Fcfa</td>
+                    <td>24H</td>
+                </tr>
+                <tr>
+                    <td>24H</td>
+                    <td>200Fcfa</td>
+                    <td>24H</td>
+                </tr>
+                <tr>
+                    <td>1Semaine</td>
+                    <td>500Fcfa</td>
+                    <td>7Jours</td>
+                </tr>
+                <tr>
+                    <td>1Mois</td>
+                    <td>2000Fcfa</td>
+                    <td>30Jours</td>
+                </tr>
+            </table>
+            <p class="para1">Made by Brouhane</p>
+        </div>
+    </div>
+
+</body>
+</html>
