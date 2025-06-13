@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page de connexion</title>
+    <style>
+      .meta {
+        border: 1px solid black;
+        width: 350px;
+        height: 600px;
+        display: flex;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 450px;
+        background: rgb(179, 174, 174);
+        border-radius: 20px;
+        border-color: white;
+        padding: 10px;
+      }
+      .meta3 p {
+        margin-left: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: orangered;
+      }
+      .meta3 p:hover {
+        cursor: pointer;
+        color: white;
+      }
+      .meta1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 0px;
+      }
+      .meta1 input {
+        margin-left: 55px;
+        border-radius: 5px;
+        background: transparent;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        padding: 15px;
+      }
+      ::placeholder {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+      }
+      .meta1 input:hover {
+        cursor: pointer;
+        background: rgb(131, 179, 241);
+        border-color: white;
+      }
+      .meta2 {
+        text-align: center;
+        margin-top: -10px;
+        background-position: right;
+      }
+      .meta2 p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-left: 50px;
+        padding-top: 10px;
+        color: white;
+      }
+      .meta2 p:hover {
+        cursor: pointer;
+        color: cadetblue;
+      }
+      .para {
+        background: deepskyblue;
+        width: 135px;
+        height: 23px;
+        border-radius: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        margin-left: 50px;
+      }
+
+      button {
+        width: 100px;
+        margin-left: 120px;
+        background: blue;
+        border-radius: 5px;
+        margin-top: 10px;
+        height: 23px;
+        color: white;
+      }
+      button:hover {
+        cursor: pointer;
+        background: cadetblue;
+      }
+      .email {
+        display: flex;
+        font-size: 10px;
+        margin-left: 20px;
+        gap: 10px;
+        margin-top: 55px;
+      }
+      .email a {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+      }
+      .email p:hover {
+        cursor: pointer;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="meta">
+      <div class="meta1">
+        <div class="meta3">
+          <p>Connexion</p>
+        </div>
+        <input type="text" name="Nom" placeholder="Entrer votre nom" />
+        <input type="text" name="Prenom" placeholder="Entrer votre prenom" />
+        <input
+          type="email"
+          name="email"
+          placeholder="Exemple: brouhane@gmail.com"
+        />
+        <input
+          type="password"
+          name="Password"
+          placeholder="Entrer votre mot de passe"
+        />
+        <p><a href="#" style="margin-left: 40px">Mot de passe oublié</a></p>
+        <div class="meta2">
+          <p>Avez-vous de compte?</p>
+          <button type="submit" class="para">Créer un compte</button>
+        </div>
+        <button type="submit" style="margin-left: 132px">Se connecter</button>
+        <div class="email">
+          <p>Contact : <a href="+228 90-42-00-14">+228 90-42-00-14</a></p>
+          <p>
+            Email :
+            <a href="mailto:brouhaneomar2@gmail.com">brouhaneomar2@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
