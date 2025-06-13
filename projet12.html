@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+    <style>
+      form {
+        display: flex;
+        justify-content: space-around;
+      }
+      .monoligne {
+        position: relative;
+        top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 350px;
+        border-radius: 20px;
+        box-shadow: 0 0 5px black;
+        background-color: rgba(165, 116, 42, 0.219);
+        align-items: center;
+        height: 600px;
+      }
+      .monoligne input {
+        position: relative;
+        top: -10px;
+        width: 200px;
+        border-radius: 50px;
+        box-shadow: 0 0 2px black;
+        height: 20px;
+      }
+      .multiligne {
+        width: 200px;
+        text-align: center;
+        line-height: 25px;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        border-radius: 25px;
+        box-shadow: 0 0 5px;
+        background: rgba(134, 80, 10, 0.171);
+        height: 220px;
+      }
+      .multiligne p {
+        position: relative;
+        top: 20px;
+        color: brown;
+        line-height: normal;
+      }
+      .pr {
+        position: relative;
+        top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="traitement.php" method="post">
+      <div class="monoligne">
+        <label for="Nom">Nom: </label><input type="text" name="text" id="Nom" />
+
+        <label for="pass">Mot de passe</label>
+        <input type="password" name="pass" id="pass" />
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" />
+        <label for="URl">URL: </label>
+        <input type="url" name="url" id="url" />
+        <label for="tel">Téléphone: </label>
+        <input type="tel" name="tel" id="tel" />
+        <label for="number">Nombre: </label>
+        <input type="number" name="number" id="number" />
+        <label for="color">Couleur: </label>
+        <input type="color" name="color" id="color" />
+        <label for="date">Date: </label>
+        <input type="date" name="date" id="date" />
+        <label for="search">Recherche: </label>
+        <input type="search" name="search" id="search" />
+      </div>
+      <div class="multiligne">
+        <p>Cocher les aliments que vous aimez</p>
+        <div class="pr">
+          <input type="checkbox" name="frites" id="frites" />
+          <label for="frites">Frites</label> <br />
+          <input type="checkbox" name="steak" id="steak" />
+          <label for="frites">Steak</label> <br />
+          <input type="checkbox" name="epinard" id="epinard" />
+          <label for="epinard">pinard</label> <br />
+          <input type="checkbox" name="huitre" id="huitre" />
+          <label for="huitre">Huitre</label> <br />
+          <button type="submit">Envoyer</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
