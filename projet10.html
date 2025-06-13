@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code with Brouhane</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+      .hed {
+        border: 1px solid black;
+        height: 100px;
+        display: flex;
+        gap: 450px;
+      }
+      .meta {
+        font-family: monospace;
+        font-size: 38px;
+        display: inline-block;
+        position: relative;
+        font-weight: bold;
+        top: 15px;
+        left: 10px;
+      }
+      .dev {
+        color: #00b7eb;
+      }
+      .B {
+        color: #ffc107;
+      }
+      .rouhane {
+        color: #ff5722;
+      }
+      .bar {
+        position: relative;
+        width: 300px;
+        height: 15px;
+        background: linear-gradient(to right, #00b7eb 50%, #ff5722 50%);
+      }
+      .meta0 ul {
+        display: flex;
+        gap: 40px;
+      }
+      .meta0 li {
+        list-style: none;
+        position: relative;
+        top: 10px;
+        font-size: 20px;
+      }
+      .meta0 li:hover {
+        color: #00b7eb;
+        transition: 0.5s ease;
+      }
+      .meta1 {
+        display: flex;
+        gap: 400px;
+        position: relative;
+        top: 35px;
+      }
+      .meta2 {
+        position: relative;
+        left: 100px;
+        top: 100px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      .image img {
+        width: 600px;
+        height: 600px;
+        background: transparent;
+        position: relative;
+        right: 10px;
+        border-right: none;
+        border-radius: 15px;
+        box-shadow: 0 0 10px;
+      }
+      .meta2 h1 {
+        font-size: 25px;
+      }
+      .meta2 p {
+        font-size: 25px;
+      }
+      .hel {
+        color: red;
+      }
+      .sal {
+        position: relative;
+        font-size: 55px;
+        font-weight: bold;
+      }
+      .meta3 {
+        display: flex;
+        gap: 100px;
+        position: relative;
+        top: 80px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      .image1 img {
+        width: 700px;
+        height: 800px;
+        border-radius: 10px;
+        position: relative;
+        left: 20px;
+        box-shadow: 0 0 10px;
+      }
+      .meta3 h1 {
+        color: goldenrod;
+        font-size: 30px;
+      }
+      .meta3 p {
+        position: relative;
+        top: -20px;
+        font-size: 17px;
+      }
+      .skil ul {
+        display: flex;
+        gap: 20px;
+      }
+      .skil li {
+        list-style: none;
+        color: #00b7eb;
+      }
+      .secte {
+        position: relative;
+        top: 150px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      .secte h1 {
+        position: relative;
+        left: 10px;
+        font-size: 35px;
+      }
+      .meta5 {
+        display: flex;
+        gap: 15px;
+      }
+      .lol1 {
+        background: rgba(245, 245, 245, 0.089);
+      }
+      .lol1 p,
+      h2 {
+        position: relative;
+        left: 10px;
+      }
+      .lol2 {
+        background: rgba(245, 245, 245, 0.089);
+      }
+      .lol2 p,
+      h2 {
+        position: relative;
+        left: 10px;
+      }
+      .lol3 {
+        background: rgba(245, 245, 245, 0.089);
+      }
+      .lol3 p,
+      h2 {
+        position: relative;
+        left: 10px;
+      }
+      .lol1 img {
+        position: relative;
+        top: 10px;
+        left: 10px;
+      }
+      .lol2 img {
+        position: relative;
+        top: 10px;
+        left: 10px;
+      }
+      .lol3 img {
+        position: relative;
+        top: 10px;
+        left: 10px;
+        border-radius: 50px;
+      }
+      .projet {
+        position: relative;
+        top: 250px;
+      }
+      .pro {
+        display: flex;
+        justify-content: space-around;
+      }
+      .pro img {
+        width: 350px;
+        height: 350px;
+        border-radius: 15px;
+      }
+      .projet button {
+        position: relative;
+        top: 25px;
+        left: 550px;
+        background-color: red;
+        width: 200px;
+        height: 35px;
+        border-color: white;
+        border-radius: 5px;
+      }
+      .projet h1 {
+        position: relative;
+        left: 500px;
+        font-size: 50px;
+      }
+      .contacts {
+        display: flex;
+        position: relative;
+        top: 350px;
+        justify-content: space-around;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      .nom {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        position: relative;
+        left: -70px;
+        top: 20px;
+      }
+      input {
+        width: 600px;
+        background-color: rgba(245, 245, 245, 0.089);
+        border: none;
+        height: 20px;
+        border-radius: 2px;
+      }
+      .put {
+        padding-bottom: 100px;
+      }
+      .put1 {
+        width: 70px;
+        background-color: red;
+        border-color: white;
+        border-radius: 5px;
+        height: 50px;
+        position: relative;
+        top: -15px;
+      }
+      .contact p {
+        position: relative;
+        left: 10px;
+      }
+      .contact a {
+        text-decoration: none;
+        color: #ff5722;
+      }
+      .foot {
+        padding-top: 10px;
+        position: relative;
+        top: 400px;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        line-height: 10px;
+        background-color: rgba(245, 245, 245, 0.089);
+      }
+      .foot p {
+        position: relative;
+        top: -8px;
+        color: #00b7eb;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <header class="hed">
+        <div class="meta">
+          <span class="dev">Dev</span>
+          <span class="B">B</span>
+          <span class="rouhane">rouhane</span>
+          <div class="bar"></div>
+        </div>
+        <div class="meta0">
+          <ul>
+            <li>A propos</li>
+            <li>Accueil</li>
+            <li>Services</li>
+            <li>Portfolio</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </header>
+      <div class="meta1">
+        <div class="meta2">
+          <h1>UI/UX DESIGNER</h1>
+          <p class="sal">Salut, je suis <span class="hel">Brouhane</span></p>
+          <p>Developpeur d'application</p>
+          <p>UI/UX</p>
+        </div>
+        <div class="image">
+          <img src="bro.jpg" alt="Photo de moi" />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="meta3">
+        <div class="image1">
+          <img src="bro1.png" alt="" />
+        </div>
+        <div class="meta4">
+          <h1>A propos de moi</h1>
+          <p>
+            Je suis étudiant en prémière année de génie logiciel, passionné par
+            le développement web et les réseaux informatiques. J'apprends
+            HTML,CSS et les bases des réseaux,avec une forte motivation pour
+            progresser. Lorem ipsum dolor sit amet, consectetuer adipiscing
+            elit. Maecenas porttitor congue massa. Fusce posuere, magna sed
+            pulvinar ultricies, purus lectus malesuada libero, sit amet commodo
+            magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.
+            Vivamus a tellus.
+          </p>
+          <div class="skil">
+            <ul>
+              <li>Atouts</li>
+              <li>Expériences</li>
+              <li>Education</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="secte">
+      <h1>Mes services</h1>
+      <div class="meta5">
+        <div class="lol1">
+          <img src="ui1.png" alt="" />
+          <h2>Web Design</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas
+            porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies
+            Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada
+            fames ac turpis egestas. Aenean nec lorem. In porttitor.
+          </p>
+        </div>
+        <div class="lol2">
+          <img src="ui2.png" alt="" />
+          <h2>UI/UX Design</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas
+            porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies
+            Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada
+            fames ac turpis egestas. Aenean nec lorem. In porttitor.
+          </p>
+        </div>
+        <div class="lol3">
+          <img src="ui3.png" alt="" />
+          <h2>App Design</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas
+            porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies
+            Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada
+            fames ac turpis egestas. Aenean nec lorem. In porttitor.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="projet">
+        <h1>Mes projet</h1>
+        <div class="pro">
+          <img src="tele1.png" alt="" />
+          <img src="tele2.png" alt="" />
+          <img src="tele3.png" alt="" />
+        </div>
+        <button type="submit">Voir plus</button>
+      </div>
+    </section>
+    <div class="contacts">
+      <div class="contact">
+        <h2>Contactez-nous</h2>
+        <p>
+          Email:
+          <a href="mailto:brouhaneomar2@gmail.com">brouhneomar2@gmail.com</a>
+        </p>
+        <p>Téléphone: <a href="#">+228 90/42/00/14</a></p>
+      </div>
+      <div class="nom">
+        <input type="text" placeholder="Enter votre nom" required />
+        <input type="email" placeholder="Taper votre mail" required />
+        <input type="text" placeholder="votre message" class="put" />
+        <button type="submit" class="put1">Envoyer</button>
+      </div>
+    </div>
+    <section>
+      <footer class="foot">
+        <p>&copy; 2025, Brouhane Developper avec HTML CSS.</p>
+        <p>Tous droits réservés</p>
+      </footer>
+    </section>
+  </body>
+</html>
