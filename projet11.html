@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculatrice</title>
+    <style>
+      .calculatrice {
+        background-color: rgba(30, 72, 210, 0.062);
+        padding-top: 100px;
+        border-radius: 20px;
+        box-shadow: 0 0 5px black;
+        width: 700px;
+        height: 700px;
+        position: relative;
+        top: 100px;
+        left: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 40px;
+      }
+      .colone1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 130px;
+        position: relative;
+        top: -30px;
+      }
+      .colone2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 130px;
+      }
+      .colone3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 130px;
+      }
+      .colone4 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 130px;
+      }
+      .colone5 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 130px;
+      }
+      span {
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        box-shadow: 0 0 5px black;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      span:hover {
+        cursor: pointer;
+        background-color: black;
+        transition: 0.5s ease;
+        color: white;
+      }
+      .tablee {
+        border-radius: 20px;
+        position: relative;
+        top: -80px;
+        width: 500px;
+        height: 60px;
+        box-shadow: 0 0 5px black;
+      }
+      .tablee p {
+        position: absolute;
+        left: 20px;
+      }
+      .tablee:hover {
+        background-color: black;
+        cursor: pointer;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculatrice">
+      <div class="tablee">
+        <p>Enter un nombre ici</p>
+      </div>
+      <div class="colone1">
+        <span style="color: red">C</span>
+        <span>%</span>
+        <span>Sup</span>
+        <span>/</span>
+      </div>
+      <div class="colone2">
+        <span>7</span>
+        <span>8</span>
+        <span>9</span>
+        <span>*</span>
+      </div>
+      <div class="colone3">
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>-</span>
+      </div>
+      <div class="colone4">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>+</span>
+      </div>
+      <div class="colone5">
+        <span>Rel</span>
+        <span>0</span>
+        <span>,</span>
+        <span>=</span>
+      </div>
+    </div>
+  </body>
+</html>
