@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        body{
+            background-image: url(barre.png);
+        }
+        .sidebar{
+            min-height: 800px;
+            width: 180px;
+            position: absolute;
+            background-color: #fff;
+            transition: 0.5s ease;
+            transform: translateX(-180px);
+            
+        }
+        h1{
+            color: rgb(66, 98, 124);
+            font-weight: 800;
+            text-align: right;
+            padding: 10px 0;
+            padding-right: 30px;
+            pointer-events: none;
+        }
+        ul li{
+            list-style: none; 
+        }
+        ul li a{
+            color: #011a41;
+            font-weight: 500;
+            padding: 5px 0;
+            display: block;
+            text-transform: capitalize;
+            text-decoration: none;
+            transition: 0.2s ease-out;
+            text-align: center;
+            line-height: 30px;
+        }
+        input{
+            display: none;
+            visibility: hidden;
+        }
+        .meta{
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            top: 20px;
+            background:#fff;
+            z-index: 1px;
+            cursor: pointer;
+            border-radius: 2px;
+            box-shadow: 0 0 3px;
+            margin-left: 10px;
+            
+        }
+        .meta .commun{
+            position: absolute;
+            height: 2px;
+            width: 20px;
+            background-color: #8000ff;
+            border-radius: 50px;
+            transition: 0.3s ease;
+           
+        }
+        .meta .top_line{
+            top: 30%;
+            left: 50%;
+            transform:  translate(-50%, -50%);
+        }
+        .meta .middle_line{
+            top: 50%;
+            left: 50%;
+            transform:  translate(-50%, -50%);
+        }
+        .meta .end_line{
+            top: 70%;
+            left: 50%;
+            transform:  translate(-50%, -50%);
+        }
+        input:checked ~ .meta .top_line{
+            left: 2px;
+            top: 14px;
+            width: 25px;
+            transform: rotate(45deg);
+        }
+        input:checked ~ .meta .end_line{
+            left: 2px;
+            top: 14px;
+            width: 25px;
+            transform: rotate(-45deg);
+        }
+        input:checked ~ .meta .middle_line{
+            opacity: 0;
+            transform: translateX(20px);
+        }
+        input:checked ~ .sidebar{
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body>
+    <label>
+        <input type="checkbox">
+        <div class="meta">
+            <span class="top_line commun"></span>
+            <span class="middle_line commun"></span>
+            <span class="end_line commun"></span>
+        </div>
+        <div class="sidebar">
+            <h1>Menu</h1>
+            <ul>
+                <li> <a href="#">Services</a></li>
+                <li><a href="#">Application</a></li>
+                <li><a href="#">Maison</a></li>
+                <li><a href="#">Document</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+    
+        </div>
+    </label>
+</body>
+</html>
