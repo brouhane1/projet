@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #6d6868e3;
+        padding: 20px;
+      }
+      .meta {
+        width: 400px;
+        position: relative;
+        top: -25px;
+        height: 600px;
+        margin: 100px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        text-align: center;
+        color: rgba(0, 47, 255, 0.781);
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        box-shadow: 0 0 10px black;
+        width: 350px;
+        position: relative;
+        padding-top: 20px;
+        left: 30px;
+        padding-bottom: 20px;
+        border-radius: 30px;
+      }
+      input,
+      button {
+        border: none;
+        border-radius: 50px;
+        width: 250px;
+        margin-left: 53px;
+        height: 30px;
+        box-shadow: 5px 5px 0;
+      }
+      input::placeholder {
+        text-align: center;
+      }
+      span a {
+        line-height: 10px;
+        color: rgba(0, 47, 255, 0.781);
+      }
+      button {
+        background-color: rgba(0, 47, 255, 0.781); /* bleue */
+        color: white;
+        cursor: pointer;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      .compte {
+        font-size: 15px;
+        font-weight: bold;
+        background-color: rgb(110, 180, 6);
+        position: relative;
+        top: -10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="meta">
+      <h1>facebook</h1>
+      <form action="#" method="post">
+        <h2>Se connecter à facebook</h2>
+        <input
+          type="email or tel"
+          id="email"
+          name="email"
+          placeholder="Exemple: exemple@domain.com"
+          required
+        />
+        <br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Exemple: ********"
+          required
+        />
+        <br />
+        <button type="submit">Se connecter</button> <br />
+        <span><a href="#">Mot de passe oublié ?</a></span> <br />
+        <span>or</span> <br />
+        <button class="compte"><a href="#">Créer un compte</a></button>
+      </form>
+    </div>
+  </body>
+</html>
